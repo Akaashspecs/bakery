@@ -36,10 +36,10 @@ const Footer = () => {
         </div>
         <div className="px-5 mt-5 lg:mt-0">
           <div>
-            <div className="text-white text-4xl text-center lg:text-left">
+            <div className="text-white text-4xl text-center lg:text-left hidden sm:flex">
               ABOUT
             </div>
-            <div className="text-white my-3">
+            <div className="text-white my-3 hidden sm:flex">
               Australian Bakery is your one-stop destination for freshly baked
               delights that combine tradition with innovation. Renowned for its
               wide range of cakes, bread, cookies, and snacks, Atul Bakery is
@@ -47,7 +47,7 @@ const Footer = () => {
               precision.
             </div>
           </div>
-          <div className="flex justify-between flex-wrap mt-10">
+          <div className="flex justify-between flex-wrap mt-10 gap-5 sm:gap-0">
             {footerLinks.map((footerLink) => (
               <div key={footerLink.title} className="text-white my-5">
                 <div className="text-2xl font-bold mb-3">

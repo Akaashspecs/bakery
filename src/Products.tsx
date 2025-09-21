@@ -21,6 +21,8 @@ const Products = () => {
             className="h-[150px] absolute top-12 lg:top-[74px]"
           />
         </h5>
+
+        {/* products list */}
         <div className="flex justify-center items-center mt-20">
           <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3  mx-10 mb-20 w-auto flex-wrap">
             {products.map((product) => (
@@ -28,12 +30,15 @@ const Products = () => {
                 key={product.name}
                 className="flex border relative rounded-2xl h-[100px] md:h-auto overflow-hidden py-5 pl-14 pr-14 md:pr-0 justify-between  md:max-w-[400px] bg-white hover:border-2 hover:bg-amber-100 hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer"
               >
-                <div className="flex flex-col md:grow items-center justify-around">
-                  <div className="text-xl md:text-3xl text-center">
+                <div className="flex flex-col md:grow items-center justify-around font-semibold font-sans md:font-normal">
+                  <div className="text-sm md:text-3xl text-center">
                     {" "}
                     {product.name}
                   </div>
-                  <div> {product.type}</div>
+                  <div className="text-sm md:text-3xl text-center">
+                    {" "}
+                    {product.type}
+                  </div>
                 </div>
 
                 <img
