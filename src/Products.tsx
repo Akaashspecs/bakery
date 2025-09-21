@@ -50,7 +50,7 @@ const Products = () => {
         <div className="flex animate-reverseSlide  border-y border-black epunda-slab-cursive">
           {Array(1000)
             .fill(0)
-            .map((_, i) => (
+            .map((_) => (
               <MdOutlineArrowForwardIos className="text-amber-400 font-extrabold mx-1" />
             ))}
         </div>
@@ -72,7 +72,7 @@ const Products = () => {
         <div className="flex animate-reverseSlide  border-y border-black epunda-slab-cursive ">
           {Array(1000)
             .fill(0)
-            .map((_, i) => (
+            .map((_) => (
               <MdOutlineArrowForwardIos className="text-amber-400 font-extrabold mx-1" />
             ))}
         </div>

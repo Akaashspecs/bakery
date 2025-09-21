@@ -11,7 +11,6 @@ const Header = () => {
   };
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      console.log(!menuRef.current.contains(event.target));
       if (
         menuRef.current &&
         !menuRef.current.contains(event.target as Node) === true
