@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes reverseSlide {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-slide {
+  display: flex;
+  width: max-content;
+  animation: slide 15s linear infinite;
+}
+
+.animate-slide:hover {
+  animation-play-state: paused;
+}
+
+.animate-reverseSlide {
+  display: flex;
+  width: max-content;
+  animation: reverseSlide 205s linear infinite;
+}
+
+.animate-reverseSlide:hover {
+  animation-play-state: paused;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.epunda-slab-cursive {
+  font-family: "Epunda Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caveat-cursive {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
