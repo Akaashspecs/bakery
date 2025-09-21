@@ -39,6 +39,13 @@ export const images = [
   "/cupcake.jpg",
   "/pudding.jpg",
   "/croissant.jpeg",
+  "/blue-cupcake.jpg",
+  "/cinnamon-rolls.jpg",
+  "/cookies.jpg",
+  "/strawberry-cupcake.webp",
+  "/cupcake.jpg",
+  "/pudding.jpg",
+  "/croissant.jpeg",
 ];
 
 export const customerReviews = [
